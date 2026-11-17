@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Descubre los juegos de JDeveloper Android Apps: SUM15, CLAMLAP y La Rebelión del Alquiler.">
+<title>JDeveloper Android Apps</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Arial, sans-serif;
+    background:
+      radial-gradient(circle at 10% 0%, #283b7a, transparent 45%),
+      radial-gradient(circle at 95% 90%, #39224f, transparent 45%),
+      #101629;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 65px 20px 40px;
+}
+
+.brand {
+    display: inline-block;
+    padding: 9px 19px;
+    border-radius: 30px;
+    background: rgba(255,255,255,.12);
+    color: #ffda76;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(32px, 6vw, 52px);
+    margin: 0 0 12px;
+    letter-spacing: -1.5px;
+}
+
+header p {
+    font-size: 18px;
+    color: #c9d2eb;
+    margin: 0;
+}
+
+main {
+    width: min(950px, 92%);
+    margin: 0 auto;
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #fff;
+    color: #253049;
+    border-radius: 26px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 14px 35px rgba(0,0,0,.20);
+    transition: transform .2s;
+}
+
+.game:hover { transform: translateY(-4px); }
+
+.game img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 24px;
+    flex-shrink: 0;
+}
+
+.game-content { flex: 1; }
+
+.game h2 {
+    font-size: 27px;
+    margin: 12px 0;
+    color: #18223b;
+}
+
+.game p {
+    color: #536078;
+    line-height: 1.65;
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+.badge {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 7px 13px;
+}
+
+.available {
+    background: #dcf7e6;
+    color: #14783d;
+}
+
+.soon {
+    background: #fff0cf;
+    color: #936100;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #6858e9, #3f8bea);
+    color: white;
+    padding: 13px 22px;
+    border-radius: 13px;
+    font-weight: bold;
+    box-shadow: 0 5px 12px rgba(83,87,213,.25);
+}
+
+.button:hover { filter: brightness(1.1); }
+
+.pending {
+    display: inline-block;
+    color: #7c8495;
+    background: #edf0f5;
+    padding: 13px 22px;
+    border-radius: 13px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: #aebbd6;
+    padding: 40px 15px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #d9e2ff;
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    header { padding: 45px 15px 30px; }
+
+    .game {
+        flex-direction: column;
+        text-align: center;
+        padding: 23px;
+    }
+
+    .game img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .game h2 { font-size: 24px; }
+
+    .button, .pending {
+        display: block;
+        width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="brand">🎮 JDEVELOPER</div>
+    <h1>JDeveloper Android Apps</h1>
+    <p>Pequeños juegos. Grandes momentos.</p>
+</header>
+
+<main>
+
+    <!-- SUM15 -->
+    <article class="game">
+        <img src="sum15.png" alt="Icono de SUM15">
+
+        <div class="game-content">
+            <span class="badge available">✓ Disponible en Google Play</span>
+            <h2>SUM15</h2>
+
+            <p>
+                ¡Conecta números, suma 15 y supera nuevos desafíos!
+                Disfruta de una aventura llena de color y fantasía.
+                Supera niveles en Campaña o pon a prueba tu estrategia
+                en los modos 60 segundos, Supervivencia y 100 movimientos.
+            </p>
+
+            <a class="button"
+               href="https://play.google.com/store/apps/details?id=com.sum15.game"
+               target="_blank" rel="noopener noreferrer">
+                ▶ Descargar en Google Play
+            </a>
+        </div>
+    </article>
+
+    <!-- CLAMLAP -->
+    <article class="game">
+        <img src="clamlap.png" alt="Icono de CLAMLAP">
+
+        <div class="game-content">
+            <span class="badge soon">✦ Próximamente</span>
+            <h2>CLAMLAP</h2>
+
+            <p>
+                ¡Rueda, corre y vence al reloj!
+                Controla una bola inclinando tu móvil en una
+                emocionante aventura de física 3D.
+                Supera 19 niveles en cuatro mundos,
+                esquiva obstáculos y consigue medallas.
+                ¡Mejora tus tiempos y compite en los rankings mundiales!
+            </p>
+
+            <span class="pending">Próximamente en Google Play</span>
+        </div>
+    </article>
+
+    <!-- LA REBELIÓN DEL ALQUILER -->
+    <article class="game">
+        <img src="alquiler.png" alt="Icono de La Rebelión del Alquiler">
+
+        <div class="game-content">
+            <span class="badge soon">✦ Próximamente</span>
+            <h2>La Rebelión del Alquiler</h2>
+
+            <p>
+                ¡El alquiler está por las nubes!
+                Desahógate en este divertido juego satírico
+                de clics y protesta.
+                Pulsa botones reivindicativos, contribuye
+                a un contador mundial y participa en
+                una rebelión digital colectiva.
+                ¡Porque cada clic cuenta!
+            </p>
+
+            <span class="pending">Próximamente en Google Play</span>
+        </div>
+    </article>
+
+</main>
+
+<footer>
+    © 2026 JDeveloper Android Apps<br><br>
+    <a href="mailto:Jdeveloper.android.apps@gmail.com">Contacto</a>
+    &nbsp;·&nbsp;
+    <a href="https://sites.google.com/view/sum15-privacy/inicio"
+       target="_blank" rel="noopener noreferrer">Privacidad de SUM15</a>
+</footer>
+
+</body>
+</html>
